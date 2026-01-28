@@ -1,4 +1,5 @@
 import { Personagem } from "./components/personagem";
+import { Titulo } from "./components/titulo";
 
 const personagens = [
   {
@@ -21,14 +22,10 @@ const personagens = [
   }
 ];
 
-export function Welcome() {
+export function Personagens() {
   return (
     <>
-      <div className="header">
-        <h1>
-          Rick and Morty
-        </h1>
-      </div>
+      <Titulo />
       <div className="personagens">
         {
           // Aqui percorremos a lista de personagems
